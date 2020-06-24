@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSunmiPayLibSample.Android", "XamarinSunmiPayLibSample.Android\XamarinSunmiPayLibSample.Android.csproj", "{B5F98DBD-ED5D-4200-9BEC-F4C00F7EA1EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSunmiPayLibSample", "XamarinSunmiPayLibSample\XamarinSunmiPayLibSample.csproj", "{6EFA5A6D-0BC5-4672-9E69-B46DC146B45E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSunmiPayLibSample.PaySDK", "PaySDK\XamarinSunmiPayLibSample.PaySDK.csproj", "{40C61BF0-D43A-44DA-85C9-319ECDD96250}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5F98DBD-ED5D-4200-9BEC-F4C00F7EA1EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F98DBD-ED5D-4200-9BEC-F4C00F7EA1EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F98DBD-ED5D-4200-9BEC-F4C00F7EA1EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F98DBD-ED5D-4200-9BEC-F4C00F7EA1EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EFA5A6D-0BC5-4672-9E69-B46DC146B45E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EFA5A6D-0BC5-4672-9E69-B46DC146B45E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EFA5A6D-0BC5-4672-9E69-B46DC146B45E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EFA5A6D-0BC5-4672-9E69-B46DC146B45E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40C61BF0-D43A-44DA-85C9-319ECDD96250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C61BF0-D43A-44DA-85C9-319ECDD96250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40C61BF0-D43A-44DA-85C9-319ECDD96250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40C61BF0-D43A-44DA-85C9-319ECDD96250}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

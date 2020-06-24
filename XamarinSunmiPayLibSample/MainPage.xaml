@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamarinSunmiPayLibSample.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="Root"
+    BackgroundColor="AliceBlue"
+    mc:Ignorable="d">
+    <StackLayout>
+        <Frame BackgroundColor="DodgerBlue" HeightRequest="30">
+            <Label
+                FontSize="24"
+                HorizontalTextAlignment="Center"
+                Text="Terminal"
+                TextColor="White"
+                VerticalTextAlignment="Center" />
+        </Frame>
+        <StackLayout Margin="20,50" VerticalOptions="Center">
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Button
+                    BackgroundColor="LightSlateGray"
+                    Command="{Binding ReadCommand}"
+                    CommandParameter="Nfc"
+                    CornerRadius="5"
+                    Text="Nfc"
+                    TextColor="White" />
+                <Button
+                    BackgroundColor="LightSlateGray"
+                    Command="{Binding ReadCommand}"
+                    CommandParameter="Ic"
+                    CornerRadius="5"
+                    Text="Ic"
+                    TextColor="White" />
+                <Button
+                    BackgroundColor="LightSlateGray"
+                    Command="{Binding ReadCommand}"
+                    CommandParameter="Magnetic"
+                    CornerRadius="5"
+                    Text="Magnetic"
+                    TextColor="White" />
+            </StackLayout>
+            <Button
+                Margin="100,20"
+                BackgroundColor="LightSlateGray"
+                Command="{Binding ReadCommand}"
+                CommandParameter="All"
+                CornerRadius="10"
+                Text="All"
+                TextColor="White" />
+            <Frame>
+                <Grid ColumnDefinitions="100,*" RowDefinitions="25, 25, 25">
+                    <Label FontAttributes="Bold" Text="Cardholder:" />
+                    <Label Grid.Column="1" Text="{Binding CreditCard.CardHolderName}" />
+                    <Label
+                        Grid.Row="1"
+                        FontAttributes="Bold"
+                        Text="ExpireDate:" />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Text="{Binding CreditCard.ExpireDate}" />
+                    <Label
+                        Grid.Row="2"
+                        FontAttributes="Bold"
+                        Text="Number:" />
+                    <Label
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Text="{Binding CreditCard.CardNumber}" />
+                </Grid>
+            </Frame>
+            <ActivityIndicator
+                Margin="0,10,0,0"
+                IsRunning="{Binding IsRunning}"
+                Color="DodgerBlue" />
+            <Button
+                Margin="40,20"
+                BackgroundColor="Orange"
+                Command="{Binding PrintCommand}"
+                CornerRadius="10"
+                Text="Print Out"
+                TextColor="White" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

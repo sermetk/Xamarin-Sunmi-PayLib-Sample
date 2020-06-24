@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.xamarin.sunmi.xamarin_sunmi_paylib_sample">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+	<application android:label="XamarinSunmiPayLibSample.Android"></application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INSTALL_LOCATION_PROVIDER" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+	<uses-permission android:name="com.sunmi.perm.LED" />
+	<uses-permission android:name="com.sunmi.perm.MSR" />
+	<uses-permission android:name="com.sunmi.perm.ICC" />
+	<uses-permission android:name="com.sunmi.perm.PINPAD" />
+	<uses-permission android:name="com.sunmi.perm.SECURITY" />
+	<uses-permission android:name="com.sunmi.perm.CONTACTLESS_CARD" />
+</manifest>
