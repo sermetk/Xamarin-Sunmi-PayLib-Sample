@@ -89,8 +89,8 @@ namespace XamarinSunmiPayLibSample.Droid.PayImplementations
                 var bytesOut = Arrays.CopyOf(outData, len);
                 var hexStr = Helpers.Bytes2HexStr(bytesOut);
                 var map = Helpers.BuildTLVMap(hexStr);
-                var tlv5F24 = map["5F24"]; //expire date
-                var tlv5F20 = map["5F20"]; //cardholder date    
+                map.TryGetValue("5F24", out var tlv5F24); //expire date
+                map.TryGetValue("5F20", out var tlv5F20); //cardholder
                 var value = tlv5F20.value;
                 var bytes = Helpers.GetBytesFromHexString(value);
                 var cardholder = string.Empty;
